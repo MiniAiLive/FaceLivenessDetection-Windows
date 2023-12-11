@@ -4,7 +4,7 @@
    width="300">
 </div>
 
-## Welcome to the MiniAiLive!
+## Welcome to the [MiniAiLive](https://www.miniai.live/)!
 We provide system integrators with fast, flexible and extremely precise facial recognition that can be deployed across a number of scenarios, including security, access control, public safety, fintech, smart retail and home protection.
 Feel free to use our MiniAI Face Recognition Server SDK.
 
@@ -115,3 +115,15 @@ docker run --network host miniairecognition
 ## Request license
 Subscribe free trial at our [Subscription Page](https://www.miniai.live/contact/)  
 You will get email with trial license key ("XXXXX-XXXXX-XXXXX-XXXXX").
+
+## About MiniAiLive
+[MiniAiLive](https://www.miniai.live/) is a leading AI solutions company specializing in computer vision and machine learning technologies. We provide cutting-edge solutions for various industries, leveraging the power of AI to drive innovation and efficiency.
+
+## Contact
+For any inquiries or questions, please contact us at info@miniai.live.
+
+<p align="center">
+<a target="_blank" href="https://t.me/Contact_MiniAiLive"><img src="https://img.shields.io/badge/telegram-@MiniAiLive-blue.svg?logo=telegram" alt="www.miniai.live"></a>&emsp;
+<a target="_blank" href="https://wa.me/+19162702374"><img src="https://img.shields.io/badge/whatsapp-MiniAiLive-blue.svg?logo=whatsapp" alt="www.miniai.live"></a>&emsp;
+<a target="_blank" href="https://join.skype.com/invite/ltQEVDmVddTe"><img src="https://img.shields.io/badge/skype-MiniAiLive-blue.svg?logo=skype" alt="www.miniai.live"></a>&emsp;
+</p>
