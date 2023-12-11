@@ -94,10 +94,9 @@ pip install -r requirements.txt
 python app.py
 ```
 <p align="center">
-  <img width="360" src="https://user-images.githubusercontent.com/122285115/212585049-63740d35-e44b-46d4-b02b-fbe4a50fa0e2.png">&emsp;&emsp;
-  <img width="360" src="https://user-images.githubusercontent.com/122285115/212585096-8361b446-a0ee-4726-b2f4-906994c17144.png">
+  <img width="360" src="https://github.com/MiniAiLive/MiniAI-Face-Recognition-ServerSDK/assets/153516004/8d4d6bef-3536-46a4-a0c1-4c9a15be8e3d">&emsp;&emsp;
+  <img width="360" src="https://github.com/MiniAiLive/MiniAI-Face-Recognition-ServerSDK/assets/153516004/53cf31f5-1093-435a-a998-737d7bd02177">
 </p>
-
 
 ## Docker Flask Example
 - Replace license key in app.py
