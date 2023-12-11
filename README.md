@@ -1,5 +1,5 @@
 <div align="center">
-   <h1> MiniAiLive License Plate Recognition Docker SDK </h1>
+   <h1> MiniAiLive Face Recognition Server SDK </h1>
    <img src=https://www.miniai.live/wp-content/uploads/2023/03/logo_name-1-768x426.png alt="MiniAiLive Logo"
    width="300">
 </div>
@@ -14,7 +14,7 @@ Feel free to use our MiniAI Face Recognition Server SDK.
 
 ## Project Structure
 ```graphql
-./MiniAI-FaceRecognition-ServerSDK
+./MiniAI-Face-Recognition-ServerSDK
   ├─ bin/linux_x86_64                 - # Core library files
   │  ├─ openvino
   │  ├─ libminiai_rec.so
@@ -55,11 +55,8 @@ cp -rf ./bin/linux_x86_64/openvino/* /usr/lib
 cp ./bin/linux_x86_64/libimutils.so /usr/lib
 ```
 #### - Windows
-Contact us by Email info@miniai.live
-#### - Request license
-Subscribe free trial at our [Subscription Page](https://www.miniai.live/contact/)  
-You will get email with trial license key ("XXXXX-XXXXX-XXXXX-XXXXX").
-  
+[Contact US](https://www.miniai.live/contact/) by Email info@miniai.live
+ 
 ## C++ Example
 - Replace license key in main.cpp
 - Build project
@@ -113,14 +110,14 @@ docker build --pull --rm -f "Dockerfile" -t miniairecognition:latest "."
 docker run --network host miniairecognition
 ```
 ## Request license
-Subscribe free trial at our [Subscription Page](https://www.miniai.live/contact/)  
+Feel free to [Contact US](https://www.miniai.live/contact/)  to get trial License   
 You will get email with trial license key ("XXXXX-XXXXX-XXXXX-XXXXX").
 
 ## About MiniAiLive
 [MiniAiLive](https://www.miniai.live/) is a leading AI solutions company specializing in computer vision and machine learning technologies. We provide cutting-edge solutions for various industries, leveraging the power of AI to drive innovation and efficiency.
 
-## Contact
-For any inquiries or questions, please contact us at info@miniai.live.
+## Contact US
+For any inquiries or questions, please [Contact US](https://www.miniai.live/contact/)
 
 <p align="center">
 <a target="_blank" href="https://t.me/Contact_MiniAiLive"><img src="https://img.shields.io/badge/telegram-@MiniAiLive-blue.svg?logo=telegram" alt="www.miniai.live"></a>&emsp;
