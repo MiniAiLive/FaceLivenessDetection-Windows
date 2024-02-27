@@ -6,7 +6,7 @@
 
 ## Welcome to the [MiniAiLive](https://www.miniai.live/)!
 We provide system integrators with fast, flexible and extremely precise facial recognition that can be deployed across a number of scenarios, including security, access control, public safety, fintech, smart retail and home protection.
-Feel free to use our MiniAI Face Recognition Server SDK.
+Feel free to use our MiniAI Face Recognition with 3D passive face liveness detection (face anti-spoofing) Server SDK.
 
 > **Note**
 >
