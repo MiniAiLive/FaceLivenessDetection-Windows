@@ -1,5 +1,5 @@
 <div align="center">
-   <h1> MiniAiLive Face Recognition LivenessDetection Linux SDK </h1>
+   <h1> MiniAiLive Face LivenessDetection Windows SDK </h1>
    <img src=https://miniai.live/wp-content/uploads/2024/02/logo_name-1-768x426-1.png alt="MiniAiLive Logo"
    width="300">
 </div>
@@ -12,105 +12,153 @@ Feel free to use our MiniAI Face Recognition with 3D passive face liveness detec
 >
 > SDK is fully on-premise, processing all happens on hosting server and no data leaves server.
 
-## Project Structure
-```graphql
-./FaceRecognition-LivenessDetection-Linux-SDK
-  ├─ bin/linux_x86_64                 - # Core library files
-  │  ├─ openvino
-  │  ├─ libminiai_rec.so
-  │  └─ libimutils.so
-  ├─ cpp                              - # C++ example
-  │  ├─ CMakeLists.txt                - # CMake file for build example
-  │  ├─ miniai_rec.h                - # C++ header file to include library
-  │  └─ main.cpp                      - # C++ example code
-  ├─ flask                            - # Python flask API serving example
-  │  ├─ app.py                        - # Flask example code
-  │  └─ requirements.txt              - # Python requirement list
-  ├─ model                            - # NN dictionary files for library
-  │  ├─ data1.bin
-  │  ├─ data2.bin  
-  │  └─ data3.bin
-  ├─ python                           - # Python example
-  │  ├─ miniai_rec.py               - # Python library Import Interface file
-  │  ├─ main.py                       - # Python example code
-  │  └─ requirements.txt              - # Python requirement list
-  ├─ test_image                       - # Test Images
-  └─ Dockerfile                       - # Docker script for python flask API serving example
+## Table of Contents
+
+- [Installation Guide](#installation-guide)
+- [API Details](#api-details)
+- [Gradio Demo](#gradio-demo)
+- [Python Test API Example](#python-test-api-example)
+
+## Installation Guide
+
+### Prerequisites
+
+- Python 3.6+
+- Windows
+- CPU: 2cores or more
+- RAM: 4GB or more
+
+### Installation Steps
+
+1. **Download the ID Document Recognition Windows Server Installer:**
+
+   Download the Server installer for your operating system from the following link:
+   
+   [Download the On-premise Server Installer](https://drive.google.com/file/d/1dOS21r57jolTMa4dGhsOkrd68R2bAU0Q/view?usp=sharing)
+
+2. **Install the On-premise Server:**
+
+   Run the installer and follow the on-screen instructions to complete the installation.
+   <div align="center">
+      <img src=https://github.com/user-attachments/assets/3438fa1c-f869-4ac0-85fc-762716da09bc alt="install">
+   </div>
+
+4. **Request License and Update:**
+
+   Run MIRequest.exe file to generate a license request file. You can find it here.
+   
+   > C:\Users\Dev-1{Your User name}\AppData\Local\MiniAiLive\MiniAiLive-FaceLiveness-WinServer
+
+   Open it, generate a license request file, and send it to us via email or WhatsApp. We will send the license based on your Unique Request file, then you can upload the license file to allow to use. Refer the below images.
+   <div align="center">
+      <img src="https://github.com/user-attachments/assets/f34cdb2d-2b4e-48ec-b303-fd38cf128336" width="300" />
+      <img src="https://github.com/user-attachments/assets/b1579722-462c-478a-9106-67b9a10b3514" width="300" />
+      <img src="https://github.com/user-attachments/assets/e33757a7-7fb1-411e-8136-129800198773" width="300" />
+      <img src="https://github.com/user-attachments/assets/d54686be-c7d8-42ba-8c57-f62fe1ec81e3" width="300" />
+   </div>
+
+6. **Verify Installation:**
+
+   After installation, verify that the On-premise Server is correctly installed by checking the task manager:
+   <div align="center">
+      <img src="https://github.com/user-attachments/assets/98e87782-073d-475c-962f-37151ef9754f" width="300" />
+   </div>
+
+## API Details
+
+### Endpoint
+
+- `POST http://127.0.0.1:8092/api/check_liveness` Face Liveness Detection API
+- `POST http://127.0.0.1:8092/api/check_liveness_base64` Face Liveness Detection API
+
+### Request
+
+- **URL:** `http://127.0.0.1:8092/api/check_liveness`
+- **Method:** `POST`
+- **Form Data:**
+  - `image`: The image file (PNG, JPG, etc.) to be analyzed. This should be provided as a file upload.
+<img width="1049" alt="Screenshot 2024-07-16 at 5 12 01 AM" src="https://github.com/user-attachments/assets/9d869c94-1d78-46e4-a076-2c24051c0d3d">
+
+- **URL:** `http://127.0.0.1:8092/api/check_liveness_base64`
+- **Method:** `POST`
+- **Raw Data:**
+  - `JSON Format`:
+    {
+       "image": "--base64 image data here--"
+    }
+<img width="1049" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/e9adf6b9-9cf7-4192-aae5-f48cb2f3535f">
+
+### Response
+
+The API returns a JSON object with the recognized details from the ID document. Here is an example response:
+   <div align="center">
+      <img src="https://github.com/MiniAiLive/ID-DocumentRecognition-Windows/assets/127708602/c515e8b3-691c-4bf2-b8f7-4d33df676dec" />
+   </div>
+   
+## Gradio Demo
+
+We have included a Gradio demo to showcase the capabilities of our ID Document Recognition SDK. Gradio is a Python library that allows you to quickly create user interfaces for machine learning models.
+
+### How to Run the Gradio Demo
+
+1. **Install Gradio:**
+
+   First, you need to install Gradio. You can do this using pip:
+
+   ```sh
+   git clone https://github.com/MiniAiLive/ID-DocumentRecognition-Windows-SDK.git
+   cd gradio
+   pip install -r requirement.txt
+   ```
+2. **Run Gradio Demo:**
+   ```sh
+   python app.py
+   ```
+## Python Test API Example
+
+To help you get started with using the API, here is a comprehensive example of how to interact with the ID Document Recognition API using Python. You can use API with other language you want to use like C++, C#, Ruby, Java, Javascript and more
+
+### Prerequisites
+
+- Python 3.6+
+- `requests` library (you can install it using `pip install requests`)
+
+### Example Script
+
+This example demonstrates how to send an image file to the API endpoint and process the response.
+
+```python
+import requests
+
+# URL of the web API endpoint
+url = 'http://127.0.0.1:8082/api/id_check'
+
+# Path to the image file you want to send
+image_path = './test_image.jpg'
+
+# Read the image file and send it as form data
+files = {'image': open(image_path, 'rb')}
+
+try:
+    # Send POST request
+    response = requests.post(url, files=files)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        print('Request was successful!')
+        # Parse the JSON response
+        response_data = response.json()
+        print('Response Data:', response_data)
+    else:
+        print('Request failed with status code:', response.status_code)
+        print('Response content:', response.text)
+
+except requests.exceptions.RequestException as e:
+    print('An error occurred:', e)
 ```
 
-## Setup Project
-#### - Linux
-- Download repo and extract it
-```
-git clone https://github.com/MiniAiLive/FaceRecognition-LivenessDetection-Linux-SDK.git
-```
-- Install system dependencies
-```
-sudo apt-get update -y
-sudo apt-get install -y libcurl4-openssl-dev libssl-dev libopencv-dev
-```
-- Copy libraries into system folder
-```
-cp -rf ./bin/linux_x86_64/openvino/* /usr/lib
-cp ./bin/linux_x86_64/libimutils.so /usr/lib
-```
-#### - Windows
-[Contact US](https://www.miniai.live/contact/) by Email info@miniai.live
- 
-## C++ Example
-- Replace license key in main.cpp
-- Build project
-```
-cd cpp
-mkdir build && cd build
-cmake ..
-make
-```
-- Run project
-```
-./example_recognition --image1 ../../test_image/Carlos_Menem_0018.jpg --image2 ../../test_image/Carlos_Menem_0020.jpg --model ../../model
-```
-
-## Python Example
-- Replace license key in main.py
-- Install dependencies
-```
-cd python
-pip install -r requirements.txt
-```
-- Run project
-```
-python main.py
-```
-## Python Flask Example
-- Replace license key in app.py
-- Install dependencies
-```
-cd flask
-pip install -r requirements.txt
-```
-- Run project
-```
-python app.py
-```
-<p align="center">
-  <img width="360" src="https://github.com/MiniAiLive/MiniAI-Face-Recognition-ServerSDK/assets/153516004/8d4d6bef-3536-46a4-a0c1-4c9a15be8e3d">&emsp;&emsp;
-  <img width="360" src="https://github.com/MiniAiLive/MiniAI-Face-Recognition-ServerSDK/assets/153516004/53cf31f5-1093-435a-a998-737d7bd02177">
-</p>
-
-## Docker Flask Example
-- Replace license key in app.py
-- Build docker image
-```
-docker build --pull --rm -f "Dockerfile" -t miniairecognition:latest "."
-```
-- Run image
-```
-docker run --network host miniairecognition
-```
 ## Request license
-Feel free to [Contact US](https://www.miniai.live/contact/)  to get trial License   
-You will get email with trial license key ("XXXXX-XXXXX-XXXXX-XXXXX").
+Feel free to [Contact US](https://www.miniai.live/contact/)  to get a trial License. We are 24/7 online on WhatsApp: [+19162702374](https://wa.me/+19162702374).
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
@@ -121,11 +169,10 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 4. Push your changes to your forked repository.
 5. Submit a pull request to the original repository.
 ```
-
 ## Try Online Demo
-Please visit our Face API Web Demo here. https://demo.miniai.live
+Please visit our ID API Web Demo here. https://demo.miniai.live
 <a href="https://demo.miniai.live" target="_blank">
-  <img alt="" src="https://github.com/MiniAiLive/FaceRecognition-LivenessDetection-Linux-SDK/assets/127708602/41111da4-a7e6-45d1-b319-67b19946b1e1">
+  <img alt="" src="https://github.com/MiniAiLive/ID-DocumentRecognition-Windows-SDK/assets/127708602/15de62ae-1d5a-408f-9805-60e935da40b4">
 </a>
 
 ## Related Product
