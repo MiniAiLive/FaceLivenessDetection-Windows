@@ -33,7 +33,7 @@ A 100% spoofing-prevention rate for both 3D printed and resin facial masks, conf
 
    Download the Server installer for your operating system from the following link:
    
-   [Download the On-premise Server Installer](https://drive.google.com/file/d/1dOS21r57jolTMa4dGhsOkrd68R2bAU0Q/view?usp=sharing)
+   [Download the On-premise Server Installer](https://drive.google.com/file/d/1FqCq7HWpI_NDodi9mmIb8aG7HNRzaMgB/view?usp=sharing)
 
 2. **Install the On-premise Server:**
 
@@ -60,7 +60,7 @@ A 100% spoofing-prevention rate for both 3D printed and resin facial masks, conf
 
    After installation, verify that the On-premise Server is correctly installed by checking the task manager:
    <div align="center">
-      <img src="https://github.com/user-attachments/assets/98e87782-073d-475c-962f-37151ef9754f" width="300" />
+      <img src="https://github.com/user-attachments/assets/98e87782-073d-475c-962f-37151ef9754f" />
    </div>
 
 ## API Details
