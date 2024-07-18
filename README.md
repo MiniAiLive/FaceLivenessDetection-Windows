@@ -76,7 +76,10 @@ A 100% spoofing-prevention rate for both 3D printed and resin facial masks, conf
 - **Method:** `POST`
 - **Form Data:**
   - `image`: The image file (PNG, JPG, etc.) to be analyzed. This should be provided as a file upload.
-<img width="600" alt="Screenshot 2024-07-16 at 5 12 01 AM" src="https://github.com/user-attachments/assets/4a68a0b9-3299-4793-a76c-e8b9c6a7ed99">
+<div align="center">
+   <img width="600" alt="Screenshot 2024-07-16 at 5 12 01 AM" src="https://github.com/user-attachments/assets/4a68a0b9-3299-4793-a76c-e8b9c6a7ed99">
+</div>
+
 
 - **URL:** `http://127.0.0.1:8092/api/check_liveness_base64`
 - **Method:** `POST`
@@ -85,7 +88,10 @@ A 100% spoofing-prevention rate for both 3D printed and resin facial masks, conf
     {
        "image": "--base64 image data here--"
     }
-<img width="600" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/a67ea9b2-985a-4623-9b90-bc8ac1ed5c11">
+<div align="center">
+   <img width="600" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/a67ea9b2-985a-4623-9b90-bc8ac1ed5c11">
+</div>
+
 
 ### Response
 
