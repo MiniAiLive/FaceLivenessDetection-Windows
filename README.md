@@ -1,12 +1,11 @@
 <div align="center">
-   <h1> MiniAiLive Face LivenessDetection Windows SDK </h1>
+   <h1> MiniAiLive Face Liveness Detection Windows SDK </h1>
    <img src=https://miniai.live/wp-content/uploads/2024/02/logo_name-1-768x426-1.png alt="MiniAiLive Logo"
    width="300">
 </div>
 
 ## Welcome to the [MiniAiLive](https://www.miniai.live/)!
-We provide system integrators with fast, flexible and extremely precise facial recognition that can be deployed across a number of scenarios, including security, access control, public safety, fintech, smart retail and home protection.
-Feel free to use our MiniAI Face Recognition with 3D passive face liveness detection (face anti-spoofing) Linux SDK.
+A 100% spoofing-prevention rate for both 3D printed and resin facial masks, confirms MiniAiLive® as a leading facial recognition solution for preventing biometric fraud in remote applications, such as online banking, requiring identity verification before granting access to sensitive data or valuable assets. Feel free to use our MiniAI 3D Face Passive Liveness Detection (face anti-spoofing) Linux SDK.
 
 > **Note**
 >
@@ -30,7 +29,7 @@ Feel free to use our MiniAI Face Recognition with 3D passive face liveness detec
 
 ### Installation Steps
 
-1. **Download the ID Document Recognition Windows Server Installer:**
+1. **Download the Face Liveness Detection Windows Server Installer:**
 
    Download the Server installer for your operating system from the following link:
    
@@ -77,7 +76,7 @@ Feel free to use our MiniAI Face Recognition with 3D passive face liveness detec
 - **Method:** `POST`
 - **Form Data:**
   - `image`: The image file (PNG, JPG, etc.) to be analyzed. This should be provided as a file upload.
-<img width="1049" alt="Screenshot 2024-07-16 at 5 12 01 AM" src="https://github.com/user-attachments/assets/9d869c94-1d78-46e4-a076-2c24051c0d3d">
+<img width="1049" alt="Screenshot 2024-07-16 at 5 12 01 AM" src="https://github.com/user-attachments/assets/4a68a0b9-3299-4793-a76c-e8b9c6a7ed99">
 
 - **URL:** `http://127.0.0.1:8092/api/check_liveness_base64`
 - **Method:** `POST`
@@ -86,13 +85,13 @@ Feel free to use our MiniAI Face Recognition with 3D passive face liveness detec
     {
        "image": "--base64 image data here--"
     }
-<img width="1049" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/e9adf6b9-9cf7-4192-aae5-f48cb2f3535f">
+<img width="1049" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/a67ea9b2-985a-4623-9b90-bc8ac1ed5c11">
 
 ### Response
 
 The API returns a JSON object with the recognized details from the ID document. Here is an example response:
    <div align="center">
-      <img src="https://github.com/MiniAiLive/ID-DocumentRecognition-Windows/assets/127708602/c515e8b3-691c-4bf2-b8f7-4d33df676dec" />
+      <img src="https://github.com/user-attachments/assets/4a68a0b9-3299-4793-a76c-e8b9c6a7ed99" />
    </div>
    
 ## Gradio Demo
@@ -106,7 +105,7 @@ We have included a Gradio demo to showcase the capabilities of our ID Document R
    First, you need to install Gradio. You can do this using pip:
 
    ```sh
-   git clone https://github.com/MiniAiLive/ID-DocumentRecognition-Windows-SDK.git
+   git clone https://github.com/MiniAiLive/FaceLivenessDetection-Windows-SDK.git
    cd gradio
    pip install -r requirement.txt
    ```
@@ -116,7 +115,7 @@ We have included a Gradio demo to showcase the capabilities of our ID Document R
    ```
 ## Python Test API Example
 
-To help you get started with using the API, here is a comprehensive example of how to interact with the ID Document Recognition API using Python. You can use API with other language you want to use like C++, C#, Ruby, Java, Javascript and more
+To help you get started with using the API, here is a comprehensive example of how to interact with the Face Liveness Detection API using Python. You can use API with other language you want to use like C++, C#, Ruby, Java, Javascript and more
 
 ### Prerequisites
 
@@ -131,7 +130,7 @@ This example demonstrates how to send an image file to the API endpoint and proc
 import requests
 
 # URL of the web API endpoint
-url = 'http://127.0.0.1:8082/api/id_check'
+url = 'http://127.0.0.1:8092/api/check_liveness'
 
 # Path to the image file you want to send
 image_path = './test_image.jpg'
