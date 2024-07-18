@@ -89,14 +89,14 @@ A 100% spoofing-prevention rate for both 3D printed and resin facial masks, conf
 
 ### Response
 
-The API returns a JSON object with the recognized details from the ID document. Here is an example response:
+The API returns a JSON object with the liveness result of the input face image. Here is an example response:
    <div align="center">
       <img src="https://github.com/user-attachments/assets/4a68a0b9-3299-4793-a76c-e8b9c6a7ed99" />
    </div>
    
 ## Gradio Demo
 
-We have included a Gradio demo to showcase the capabilities of our ID Document Recognition SDK. Gradio is a Python library that allows you to quickly create user interfaces for machine learning models.
+We have included a Gradio demo to showcase the capabilities of our Face Liveness Detection SDK. Gradio is a Python library that allows you to quickly create user interfaces for machine learning models.
 
 ### How to Run the Gradio Demo
 
