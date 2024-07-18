@@ -112,8 +112,8 @@ We have included a Gradio demo to showcase the capabilities of our Face Liveness
 
    ```sh
    git clone https://github.com/MiniAiLive/FaceLivenessDetection-Windows-SDK.git
-   cd gradio
    pip install -r requirement.txt
+   cd gradio
    ```
 2. **Run Gradio Demo:**
    ```sh
@@ -121,7 +121,7 @@ We have included a Gradio demo to showcase the capabilities of our Face Liveness
    ```
 ## Python Test API Example
 
-To help you get started with using the API, here is a comprehensive example of how to interact with the Face Liveness Detection API using Python. You can use API with other language you want to use like C++, C#, Ruby, Java, Javascript and more
+To help you get started with using the API, here is a comprehensive example of how to interact with the Face Liveness Detection API using Python. You can use API with another language you want to use like C++, C#, Ruby, Java, Javascript, and more
 
 ### Prerequisites
 
