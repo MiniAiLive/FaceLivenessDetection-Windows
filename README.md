@@ -111,7 +111,7 @@ We have included a Gradio demo to showcase the capabilities of our Face Liveness
    First, you need to install Gradio. You can do this using pip:
 
    ```sh
-   git clone https://github.com/MiniAiLive/FaceLivenessDetection-Windows-SDK.git
+   git clone https://github.com/MiniAiLive/FaceLivenessDetection-Windows.git
    pip install -r requirement.txt
    cd gradio
    ```
